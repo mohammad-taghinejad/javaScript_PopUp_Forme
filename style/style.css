@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'isans';
+    src: url('fonts/IRANSans-Bold.eot?#') format('eot'),
+        /* IE6–8 */
+        url('fonts/IRANSans-Bold.woff2') format('woff2'),
+        /* Chrome36+, Opera24+*/
+        url('fonts/IRANSans-Bold.woff') format('woff');
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'isans';
+    src: url('fonts/IRANSANSExpanded.eot?#') format('eot'),
+        /* IE6–8 */
+        url('fonts/IRANSANSExpanded.woff2') format('woff2'),
+        /* Chrome36+, Opera24+*/
+        url('fonts/IRANSANSExpanded.woff') format('woff');
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-weight: normal;
+}
+
+body {
+    font-family: isans !important;
+    font-size: 14px !important;
+}
+button{
+    width: 100%;
+    background-color: #2e6da4;
+    padding: 10px;
+    border:none;
+    color: white;
+    font-size: 15px;
+    border-right: 3px;
+    cursor: pointer;
+}
+.login{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.modal-content{
+    width: 30%;
+    background: white;
+    margin:10% auto;
+    border-right: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 20px;
+    animation: zoom 0.6s;
+
+}
+.modal_img{
+    text-align: center;
+    position: relative;
+    margin:20px 0px 10px 0px;
+}
+.modal_img img{
+    box-shadow: 0 0 15px #6d6d6d;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.close{
+    position: absolute;
+    right: 15px;
+    top: -15px;
+    font-size: 30px;
+    background-color: #ff6c6c;
+    color: white !important;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input[type=text],input[type=password]{
+    width: 95%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+@keyframes zoom {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes zoom_out {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+
+
+
+
+
+
+
+
